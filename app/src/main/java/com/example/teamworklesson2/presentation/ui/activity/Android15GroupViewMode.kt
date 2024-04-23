@@ -14,10 +14,9 @@ class Android15GroupViewMode @Inject constructor(
 ) : ViewModel(){
 
     init {
-        Log.e("log","log")
+        Log.e("android15", "it".toString())
         viewModelScope.launch {
             fetchAndroid15().collect {
-                Log.e("android15", it.toString())
             }
         }
     }
