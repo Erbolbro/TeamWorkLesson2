@@ -8,12 +8,12 @@
     android:orientation="horizontal"
     android:gravity="center|top">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_students"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
 
 
 </LinearLayout>
