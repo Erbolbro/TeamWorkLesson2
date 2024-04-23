@@ -4,7 +4,7 @@ import com.example.teamworklesson2.presentation.data.model.NameAndDescriptionRes
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-private const val END_POINT_15_GROUP = "android15groupapi"
+private const val END_POINT_15_GROUP = "ai-quotes"
 
 interface Android15ApiService {
     @GET(END_POINT_15_GROUP)
