@@ -1,5 +1,6 @@
 package com.example.teamworklesson2.presentation.di
 
+import com.example.teamworklesson2.data.remote.apiservice.Android15ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
