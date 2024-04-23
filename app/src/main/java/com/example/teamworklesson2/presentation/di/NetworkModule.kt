@@ -1,6 +1,6 @@
 package com.example.teamworklesson2.presentation.di
 
-import com.example.teamworklesson2.data.remote.apiservice.Android15ApiService
+import com.example.teamworklesson2.presentation.data.remote.apiservice.Android15ApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
-private const val BASE_URL = "https://kitsu.io/api/edge/"
+private const val BASE_URL = "https://rapidapi.com/erzanrenako312/api/"
 
 @Module
 @InstallIn(SingletonComponent::class)

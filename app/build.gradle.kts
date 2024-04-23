@@ -55,7 +55,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
-
     // Hilt
     //noinspection UseTomlInstead
     implementation("com.google.dagger:hilt-android:2.48")
