@@ -81,4 +81,7 @@ dependencies {
     //noinspection UseTomlInstead
     implementation("com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.9")
 
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
 }
