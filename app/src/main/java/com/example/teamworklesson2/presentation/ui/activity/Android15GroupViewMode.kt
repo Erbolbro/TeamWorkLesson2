@@ -11,10 +11,10 @@ import javax.inject.Inject
 @HiltViewModel
 class Android15GroupViewMode @Inject constructor(
     private val repository: Android15GroupRepository
-) : ViewModel(){
+) : ViewModel() {
 
     init {
-        Log.e("log","log")
+        Log.e("log", "log")
         viewModelScope.launch {
             fetchAndroid().collect {
                 Log.e("android15", it.toString())
