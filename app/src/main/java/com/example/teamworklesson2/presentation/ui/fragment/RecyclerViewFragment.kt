@@ -2,10 +2,8 @@ package com.example.teamworklesson2.presentation.ui.fragment
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.viewModels
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.lifecycleScope
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.teamworklesson2.R
@@ -25,7 +23,6 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
         super.onViewCreated(view, savedInstanceState)
         initialize()
         setupObserver()
-
     }
 
     private fun initialize() = with(binding) {
@@ -36,10 +33,9 @@ class RecyclerViewFragment : Fragment(R.layout.fragment_recycler_view) {
         lifecycleScope.launch {
             viewModel.fetchAndroid().collect {
                 lifecycleScope.launch {
-                    bleachAdapter.submitList(it)
+                    bleachAdapter.submitList(mutableListOf(it))
                 }
             }
         }
     }
 }
-
