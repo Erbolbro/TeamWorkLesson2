@@ -16,12 +16,12 @@ class Android15GroupViewMode @Inject constructor(
     init {
         Log.e("log","log")
         viewModelScope.launch {
-            fetchAndroid15().collect {
+            fetchAndroid().collect {
                 Log.e("android15", it.toString())
             }
         }
     }
 
-    fun fetchAndroid15() = repository.fetchAndroid15()
+    fun fetchAndroid() = repository.fetchAndroid()
 
 }
