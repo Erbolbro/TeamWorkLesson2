@@ -8,7 +8,7 @@ class Android15GroupRepository @Inject constructor(
     private val android15Group : Android15ApiService
 ) {
 
-    fun fetchAndroid15() = flow {
+    fun fetchAndroid() = flow {
         emit(android15Group.getAndroid15group())
     }
 }

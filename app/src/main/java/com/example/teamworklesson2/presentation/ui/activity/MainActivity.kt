@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         lifecycleScope.launch {
-            viewModel.fetchAndroid15().collect {
+            viewModel.fetchAndroid().collect {
                 Log.e("correct", it.toString())
             }
         }
